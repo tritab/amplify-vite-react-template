@@ -27,7 +27,7 @@ function App() {
     <Authenticator>
       {({ signOut, user }) => (
     <main>
-      <h1>{user?.signInDetails?.loginId}'s todos</h1>
+      <h1>{user?.signInDetails?.loginId}'s games</h1>
       <button onClick={createTodo}>+ new</button>
       <ul>
         {todos.map((todo => <li 
@@ -37,7 +37,7 @@ function App() {
         </li>))}
       </ul>
       <div>
-        🥳 App successfully hosted. Try creating a new todo.
+        🥳 App successfully hosted. Try creating a new game.
         <br />
         <a href="https://next-release-dev.d1ywzrxfkb9wgg.amplifyapp.com/react/start/quickstart/vite-react-app/#step-2-add-delete-to-do-functionality">
           Review next step of this tutorial.
